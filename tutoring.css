@@ -222,5 +222,8 @@ li.mobile {
     margin-left: 2.5%;
 }
 .bottompad {
+    padding-bottom: 110px;
+}
+.bottompad.mobile {
     padding-bottom: 200px;
 }
