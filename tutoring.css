@@ -16,11 +16,33 @@ body {
     border-width: 10px;
     border-color:#2c3e50;
 }
+#topbar.mobile {
+    background:#82a3c2;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    text-align: center;
+    height: 20%;
+    white-space: nowrap;
+    overflow:hidden;
+    border-bottom-style: double;
+    border-width: 10px;
+    border-color:#2c3e50;
+}
 .title {
     color:white;
     font-family: kanit, sans-serif;
     font-weight: 100;
     font-size: 42px;
+    margin-top: -2px;
+}
+.title.mobile {
+    color:white;
+    font-family: kanit, sans-serif;
+    font-weight: 100;
+    font-size: 60px;
     margin-top: -2px;
 }
 #thick {
@@ -31,11 +53,23 @@ body {
     top:90px;
     z-index:1;
 }
+.spacer.mobile {
+    position: relative;
+    top:20%;
+    z-index:1;
+}
 #tagline {
     color:white;
     margin-top: -33px;
     font-family: kanit, sans-serif;
     font-weight: 100;
+}
+#tagline.mobile {
+    color:white;
+    margin-top: -33px;
+    font-family: kanit, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
 }
 #contactbox {
     background:#82a3c2;
@@ -54,12 +88,36 @@ body {
     border-color:#2c3e50;
     transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
 }
+#contactbox.mobile {
+    background:#82a3c2;
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:25%;
+    z-index:9999;
+    text-align: center;
+    height: 150px;
+    white-space: nowrap;
+    overflow:hidden;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-width: 3px;
+    border-color:#2c3e50;
+    transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+}
 #contactbox.expanded {
     width:100%;
     height: 100px;
     border-left-style: none;
     border-top-style: solid;
     transform: translateX(-calc(100vw - 15%));
+}
+#contactbox.expanded.mobile {
+    width:100%;
+    height: 200px;
+    border-left-style: none;
+    border-top-style: solid;
+    transform: translateX(-calc(100vw - 25%));
 }
 #contacttitle {
     color: white;
@@ -69,6 +127,14 @@ body {
     font-size: 24px;
     transition: font-size 0.5s ease;
 }
+#contacttitle {
+    color: white;
+    margin-top: 8px;
+    font-family: kanit, sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    transition: font-size 0.5s ease;
+}
 #contacttitle.expanded {
     color: white;
     margin-top: 8px;
@@ -76,15 +142,34 @@ body {
     font-weight: 100;
     font-size: 32px;
 }
+#contacttitle.expanded.mobile {
+    color: white;
+    margin-top: 8px;
+    font-family: kanit, sans-serif;
+    font-weight: 100;
+    font-size: 42px;
+}
 #contacttext {
     margin-top: -20px;
     font-family: kanit, sans-serif;
     font-weight: 100;
 }
+#contacttext.mobile {
+    margin-top: -20px;
+    font-family: kanit, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
 #contacttext.expanded {
     margin-top: -24px;
     font-family: kanit, sans-serif;
     font-weight: 100;
+}
+#contacttext.expanded.mobile {
+    margin-top: -24px;
+    font-family: kanit, sans-serif;
+    font-weight: 100;
+    font-size: 32px;
 }
 .link {
     color:#2c3e50;
@@ -99,10 +184,23 @@ body {
     color: #2c3e50;
     text-align: center;
 }
+.heading.mobile {
+    font-family: kanit, sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    color: #2c3e50;
+    text-align: center;
+}
 .bodytext {
     font-family: 'Nunito Sans', sans-serif;
     margin-top: -20px;
     font-size:20px;
+    color:#34495e;
+}
+.bodytext.mobile {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: -20px;
+    font-size:40px;
     color:#34495e;
 }
 li {
@@ -110,10 +208,19 @@ li {
     font-size:20px;
     color:#34495e; 
 }
+li.mobile {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:40px;
+    color:#34495e; 
+}
 .leftcontain {
     width:50%;
     margin-left: 25%;
 }
+.leftcontain.mobile {
+    width:95%;
+    margin-left: 2.5%;
+}
 .bottompad {
-    padding-bottom: 110px;
+    padding-bottom: 200px;
 }
