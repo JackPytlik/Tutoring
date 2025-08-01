@@ -17,3 +17,9 @@ window.addEventListener("scroll", () => {
        boxText.classList.remove("expanded");
     }
     });
+
+if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+
+} else {
+
+}
